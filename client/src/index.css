@@ -1,0 +1,25 @@
+* {
+  box-sizing: border-box;
+  padding: 0;
+  margin: 0;
+}
+
+/* media query */
+
+@media (max-width: 600px) {
+  .footer {
+    margin: 0;
+    padding: 0;
+    margin-top: 20px;
+    margin-bottom: 20px;
+  }
+}
+
+/* dark mode */
+#dark {
+  background-color: #5f264a;
+}
+
+#dark .footer h4 {
+  color: white !important;
+}

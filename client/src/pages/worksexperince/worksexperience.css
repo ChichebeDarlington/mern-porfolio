@@ -1,0 +1,45 @@
+.work {
+  background-color: #1387812a;
+  margin-left: 120px;
+  padding: 60px 0px;
+}
+.work_exp {
+  padding: 60px 0px;
+}
+.work_exp h2 {
+  font-weight: bold;
+  color: #1e1e2c;
+}
+.work_exp hr {
+  color: #138781;
+  width: 400px;
+  margin: 10px auto;
+}
+.vertical-timeline-element-title {
+  color: #138781;
+}
+.vertical-timeline-element-subtitle {
+  color: #1e1e2c;
+}
+
+/* media query */
+
+@media (max-width: 600px) {
+  .work {
+    margin: 0;
+    padding: 0;
+    margin-top: 50px;
+  }
+  .work h2 {
+    padding-top: 20px;
+  }
+  .work hr {
+    width: 280px;
+  }
+}
+
+/* dark mode */
+
+#dark .work_exp h2 {
+  color: white;
+}

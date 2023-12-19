@@ -1,0 +1,47 @@
+.tech_stack {
+  padding-left: 130px;
+  margin-top: 60px;
+}
+.tech_stack hr {
+  color: #138781;
+  width: 400px;
+  margin: 10px auto;
+}
+.tech_stack h2 {
+  font-weight: bold;
+  color: #138781;
+}
+.tech_stack .card {
+  cursor: pointer;
+}
+.tech_stack .tech_icon {
+  font-size: 2rem;
+  margin-right: 10px;
+}
+.tech_stack .card:hover {
+  background-color: #138781;
+  color: white;
+  border: none;
+  transition: 1s;
+  box-shadow: rgba(0, 0, 0, 0.35) 0px 5px 15px;
+}
+
+/* media query */
+
+@media (max-width: 600px) {
+  .tech_stack {
+    margin: 0;
+    padding: 0;
+    margin-top: 30px;
+  }
+  .tech_stack hr {
+    width: 280px;
+  }
+}
+
+/* dark mode */
+
+#dark .tech_stack h2,
+#dark .tech_stack p {
+  color: #b0a4a4;
+}
