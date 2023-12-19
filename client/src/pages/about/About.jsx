@@ -1,5 +1,6 @@
 import "./about.css";
 import Jump from "react-reveal/Jump";
+// import { Jump, Fade } from "react-awesome-reveal";
 
 const About = () => {
   return (
