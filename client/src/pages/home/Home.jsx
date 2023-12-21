@@ -27,9 +27,10 @@ const Home = () => {
                 options={{
                   strings: [
                     "FULL STACK DEVELOPER !",
-                    "MERN STACK !",
+                    "MERN STACK DEVELOPER!",
                     "FRONTEND DEVELOPER !",
                     "BACKEND DEVELOPER !",
+                    "MOBILE APP DEVELOPER",
                   ],
                   autoStart: true,
                   loop: true,
