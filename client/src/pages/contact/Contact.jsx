@@ -50,8 +50,8 @@ const Contact = () => {
                 </div>
               </div>
             </div>
-            <Rotate>
-              <div className=" col-lg-6 col-md-6 col-xl-6 col-sm-12">
+            <div className=" col-lg-6 col-md-6 col-xl-6 col-sm-12">
+              <Rotate>
                 <div className="card2 d-flex card border-0 px-4 py-5">
                   <div className="row">
                     <div className="row">
@@ -108,8 +108,8 @@ const Contact = () => {
                     </div>
                   </div>
                 </div>
-              </div>
-            </Rotate>
+              </Rotate>
+            </div>
           </div>
         </div>
       </div>
