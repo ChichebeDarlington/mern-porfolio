@@ -3,6 +3,8 @@ import { BsFacebook, BsGithub, BsLinkedin } from "react-icons/bs";
 import Rotate from "react-awesome-reveal";
 import LightSpeed from "react-awesome-reveal";
 import { useState } from "react";
+const url = "http://localhost:8000/api/email";
+const hostUrl = "https://portfolio-server-ilk0.onrender.com";
 
 const Contact = () => {
   const [values, setValues] = useState({
@@ -18,7 +20,7 @@ const Contact = () => {
   const handleSubmit = async (e) => {
     e.preventDefault();
     try {
-      const response = await fetch("http://localhost:8000/api/email", {
+      const response = await fetch(hostUrl, {
         method: "POST",
         headers: {
           "Content-Type": "application/json",
