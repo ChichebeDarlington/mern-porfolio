@@ -6,7 +6,8 @@
 .sidebar {
   height: 100dvh;
   background-color: #1e1e2c;
-  width: 90px;
+  /* width: 90px; */
+  width: 10%;
   position: fixed;
 }
 .sidebar-toggle {
