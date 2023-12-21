@@ -1,7 +1,9 @@
 import "./App.css";
 import "bootstrap/dist/css/bootstrap.min.css";
 import Layout from "./components/layout/Layout";
-import About from "./pages/about/About";
+// import About from "./pages/about/About";
+import { Suspense, lazy } from "react";
+const About = lazy(() => import("./pages/about/About"));
 import TechStack from "./pages/techstack/TechStack";
 import Projects from "./pages/projects/Projects";
 import Education from "./pages/education/Education";
@@ -20,7 +22,9 @@ function App() {
         <MobileNav />
         <Layout />
         <div className="container">
-          <About />
+          <Suspense fallback={<h1>LOADING ...</h1>}>
+            <About />
+          </Suspense>
           <TechStack />
           <Education />
           <Projects />
