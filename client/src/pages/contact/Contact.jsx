@@ -3,8 +3,6 @@ import { BsFacebook, BsGithub, BsLinkedin } from "react-icons/bs";
 import Rotate from "react-awesome-reveal";
 import LightSpeed from "react-awesome-reveal";
 import { useState } from "react";
-const url = "http://localhost:8000/api/email";
-const hostUrl = "https://portfolio-server-ilk0.onrender.com";
 
 const Contact = () => {
   const [values, setValues] = useState({
@@ -20,13 +18,18 @@ const Contact = () => {
   const handleSubmit = async (e) => {
     e.preventDefault();
     try {
-      const response = await fetch(hostUrl, {
-        method: "POST",
-        headers: {
-          "Content-Type": "application/json",
-        },
-        body: JSON.stringify(values),
-      });
+      const response = await fetch(
+        import.meta.env.MODE == "development"
+          ? import.meta.env.VITE_LOCAL_URL
+          : import.meta.env.VITE_HOST_URL,
+        {
+          method: "POST",
+          headers: {
+            "Content-Type": "application/json",
+          },
+          body: JSON.stringify(values),
+        }
+      );
       const data = await response.json();
       console.log(data);
     } catch (error) {
@@ -93,7 +96,7 @@ const Contact = () => {
                       <textarea
                         type="text"
                         name="message"
-                        placeholder="Input your name"
+                        placeholder="Write your message, I will get the response in reply as fast as possible"
                         className="mb-3"
                         value={values.message}
                         onChange={handleOnchange}
