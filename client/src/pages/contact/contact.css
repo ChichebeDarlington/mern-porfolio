@@ -75,6 +75,20 @@ button:focus {
 .contact svg:hover {
   opacity: 0.7;
 }
+.sent_container {
+  display: none;
+}
+.sent_container_block {
+  display: block;
+  text-align: center;
+  background-color: green;
+  width: 90%;
+  margin-inline: auto;
+}
+.message {
+  color: #fff;
+  margin-top: 15px;
+}
 
 /* media query */
 

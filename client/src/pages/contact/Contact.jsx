@@ -10,9 +10,17 @@ const Contact = () => {
     email: "",
     message: "",
   });
+  const [sent, setSent] = useState(false);
 
   const handleOnchange = (e) => {
     setValues({ ...values, [e.target.name]: e.target.value });
+  };
+
+  const handleSent = () => {
+    setSent(true);
+    setTimeout(() => {
+      setSent(false);
+    }, 3000);
   };
 
   const handleSubmit = async (e) => {
@@ -33,8 +41,9 @@ const Contact = () => {
       const data = await response.json();
       if (data.success) {
         setValues({ name: "", email: "", message: "" });
+        handleSent();
       }
-      console.log(data);
+      // console.log(data);
     } catch (error) {
       console.log(error);
     }
@@ -104,6 +113,13 @@ const Contact = () => {
                         value={values.message}
                         onChange={handleOnchange}
                       />
+                    </div>
+                    <div
+                      className={
+                        sent ? "sent_container_block" : "sent_container"
+                      }
+                    >
+                      <p className="message">Message sent successfully</p>
                     </div>
                     <div className="row px-3">
                       <button
