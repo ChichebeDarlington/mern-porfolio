@@ -1,5 +1,5 @@
 import "./projects.css";
-import Spin from "react-reveal/Spin";
+import Spin from "react-awesome-reveal";
 
 const Projects = () => {
   return (

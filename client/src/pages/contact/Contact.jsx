@@ -1,7 +1,7 @@
 import "./contact.css";
 import { BsFacebook, BsGithub, BsLinkedin } from "react-icons/bs";
-import Rotate from "react-reveal/Rotate";
-import LightSpeed from "react-reveal/LightSpeed";
+import Rotate from "react-awesome-reveal";
+import LightSpeed from "react-awesome-reveal";
 import { useState } from "react";
 
 const Contact = () => {

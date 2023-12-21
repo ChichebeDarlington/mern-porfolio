@@ -1,7 +1,7 @@
 import { stackList } from "../../utils/techStackList";
 import "./techstack.css";
-import RubberBand from "react-reveal/RubberBand";
-import Fade from "react-reveal/Fade";
+import RubberBand from "react-awesome-reveal";
+import Fade from "react-awesome-reveal";
 
 const TechStack = () => {
   return (

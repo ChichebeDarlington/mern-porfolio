@@ -1,6 +1,6 @@
 import "./home.css";
 import TypeWriter from "typewriter-effect";
-import Fade from "react-reveal/Fade";
+import { Fade } from "react-awesome-reveal";
 import { useTheme } from "../../components/context/ThemeContext";
 import { BsFillMoonStarsFill, BsFillSunFill } from "react-icons/bs";
 

@@ -1,4 +1,4 @@
-import Tada from "react-reveal/Tada";
+import Tada from "react-awesome-reveal";
 
 const Footer = () => {
   return (

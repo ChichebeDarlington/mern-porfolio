@@ -1,6 +1,6 @@
 import "./about.css";
-import Jump from "react-reveal/Jump";
-// import { Jump } from "react-awesome-reveal";
+// import Jump from "react-reveal/Jump";
+import Jump from "react-awesome-reveal";
 
 const About = () => {
   return (
