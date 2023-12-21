@@ -31,6 +31,9 @@ const Contact = () => {
         }
       );
       const data = await response.json();
+      if (data.success) {
+        setValues({ name: "", email: "", message: "" });
+      }
       console.log(data);
     } catch (error) {
       console.log(error);
@@ -96,7 +99,7 @@ const Contact = () => {
                       <textarea
                         type="text"
                         name="message"
-                        placeholder="Write your message, I will get the response in reply as fast as possible"
+                        placeholder="Write your message, I will get the response and reply as fast as possible"
                         className="mb-3"
                         value={values.message}
                         onChange={handleOnchange}
